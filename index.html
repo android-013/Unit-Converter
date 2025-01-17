@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <button class="nav-item" onclick="showCategory('area')">Area</button>
+        <!-- Other navbar buttons -->
+        <button class="nav-item" onclick="showCategory('length')">Length</button>
+        <button class="nav-item" onclick="showCategory('volume')">Volume</button>
+        <button class="nav-item" onclick="showCategory('temperature')">Temperature</button>
+        <button class="nav-item" onclick="showCategory('mass')">Mass</button>
+        <button class="nav-item" onclick="showCategory('data')">Data</button>
+        <button class="nav-item" onclick="showCategory('speed')">Speed</button>
+        <button class="nav-item" onclick="showCategory('time')">Time</button>
+    </nav>
+
+    <div id="content">
+        <!-- Area Section -->
+        <div id="area-conversion" class="conversion-section hidden">
+            <h2>Area Conversion</h2>
+            <div class="conversion-container">
+                <!-- First Box -->
+                <div class="input-group">
+                    <input type="number" id="area-box1" placeholder="Enter value" oninput="convertArea('box1')">
+                    <select id="area-unit1" onchange="convertArea('box1')">
+                        <option value="sqin">Square Inches (in²)</option>
+                        <option value="sqft">Square Feet (ft²)</option>
+                        <option value="cm2">Square Centimeters (cm²)</option>
+                        <option value="m2">Square Meters (m²)</option>
+                        <option value="km2">Square Kilometers (km²)</option>
+                        <option value="miles2">Square Miles (mi²)</option>
+                        <option value="acres">Acres</option>
+                        <option value="hectares">Hectares</option>
+                    </select>
+                </div>
+                <!-- Second Box -->
+                <div class="input-group">
+                    <input type="number" id="area-box2" placeholder="Enter value" oninput="convertArea('box2')">
+                    <select id="area-unit2" onchange="convertArea('box2')">
+                        <option value="sqin">Square Inches (in²)</option>
+                        <option value="sqft">Square Feet (ft²)</option>
+                        <option value="cm2">Square Centimeters (cm²)</option>
+                        <option value="m2">Square Meters (m²)</option>
+                        <option value="km2">Square Kilometers (km²)</option>
+                        <option value="miles2">Square Miles (mi²)</option>
+                        <option value="acres">Acres</option>
+                        <option value="hectares">Hectares</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <!-- Other sections go here -->
+    </div>    
+    
+    <script src="script.js"></script>
+</body>
+</html>
