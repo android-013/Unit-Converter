@@ -20,14 +20,21 @@
     </nav>
 
     <div id="content">
-        <!-- Area Section -->
         <div id="area-conversion" class="conversion-section hidden">
             <h2>Area Conversion</h2>
             <div class="conversion-container">
                 <!-- First Box -->
                 <div class="input-group">
-                    <input type="number" id="area-box1" placeholder="Enter value" oninput="convertArea('box1')">
-                    <select id="area-unit1" onchange="convertArea('box1')">
+                    <input 
+                        type="number" 
+                        id="area-box1" 
+                        placeholder="Enter value" 
+                        onfocus="setActiveInput('box1')" 
+                        oninput="convertArea()"
+                    >
+                    <select 
+                        id="area-unit1" 
+                        onchange="convertArea()">
                         <option value="sqin">Square Inches (in²)</option>
                         <option value="sqft">Square Feet (ft²)</option>
                         <option value="cm2">Square Centimeters (cm²)</option>
@@ -38,10 +45,19 @@
                         <option value="hectares">Hectares</option>
                     </select>
                 </div>
+        
                 <!-- Second Box -->
                 <div class="input-group">
-                    <input type="number" id="area-box2" placeholder="Enter value" oninput="convertArea('box2')">
-                    <select id="area-unit2" onchange="convertArea('box2')">
+                    <input 
+                        type="number" 
+                        id="area-box2" 
+                        placeholder="Enter value" 
+                        onfocus="setActiveInput('box2')" 
+                        oninput="convertArea()"
+                    >
+                    <select 
+                        id="area-unit2" 
+                        onchange="convertArea()">
                         <option value="sqin">Square Inches (in²)</option>
                         <option value="sqft">Square Feet (ft²)</option>
                         <option value="cm2">Square Centimeters (cm²)</option>
@@ -54,6 +70,7 @@
                 </div>
             </div>
         </div>
+        
         <!-- Other sections go here -->
     </div>    
     
