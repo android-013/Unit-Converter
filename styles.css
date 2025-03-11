@@ -70,6 +70,14 @@ button:hover {
     font-family: Arial, sans-serif;
 }
 
+#area-box1 {
+    max-width: 480px;
+}
+
+#area-box2 {
+    max-width: 480px;
+}
+
 .conversion-section.hidden {
     display: none;
 }
