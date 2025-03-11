@@ -127,13 +127,4 @@ button:hover {
 }
 
 /* Responsive Design */
-@media (min-width: 768px) {
-    .conversion-container {
-        flex-direction: row;
-        gap: 30px;
-    }
 
-    .input-group {
-        flex: 1;
-    }
-}
