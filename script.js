@@ -41,16 +41,6 @@ function convertArea() {
     const unit1 = document.getElementById('area-unit1').value;
     const unit2 = document.getElementById('area-unit2').value;
 
-    if (activeInput === 'box1') {
-        // Convert box1 value to box2 value
-        const valueInSqInches = box1Value * conversionRates[unit1];
-        const result = valueInSqInches / conversionRates[unit2];
-        document.getElementById('area-box2').value = result.toFixed(4);
-    } else if (activeInput === 'box2') {
-        // Convert box2 value to box1 value
-        const valueInSqInches = box2Value * conversionRates[unit2];
-        const result = valueInSqInches / conversionRates[unit1];
-        document.getElementById('area-box1').value = result.toFixed(4);
-    }
+    
 }
 
