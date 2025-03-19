@@ -38,9 +38,6 @@ function convertArea() {
     // Get values and units
     const box1Value = parseFloat(document.getElementById('area-box1').value) || 0;
     const box2Value = parseFloat(document.getElementById('area-box2').value) || 0;
-    const unit1 = document.getElementById('area-unit1').value;
-    const unit2 = document.getElementById('area-unit2').value;
-
     
 }
 
