@@ -16,16 +16,7 @@ function showCategory(category) {
     }
 }
 
-const conversionRates = {
-    sqin: 1, // Reference unit
-    sqft: 144,
-    cm2: 6.4516,
-    m2: 1550,
-    km2: 1550003100,
-    miles2: 4014489600,
-    acres: 6272640,
-    hectares: 15500031,
-};
+
 
 
 
