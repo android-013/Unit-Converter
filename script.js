@@ -27,8 +27,6 @@ const conversionRates = {
     hectares: 15500031,
 };
 
-// Track which box is the active input
-let activeInput = 'box1';
 
 
 
