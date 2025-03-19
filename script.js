@@ -30,8 +30,6 @@ const conversionRates = {
 // Track which box is the active input
 let activeInput = 'box1';
 
-function setActiveInput(box) {
-    activeInput = box;
-}
+
 
 
