@@ -5,6 +5,7 @@ body {
     padding: 0;
     background: #0a0f1e;
     color: #ffffff;
+    overflow-x: hidden;
 }
 .navbar {
     display: flex;
@@ -12,6 +13,11 @@ body {
     white-space: nowrap;
     background: linear-gradient(90deg, #004aad, #00d4ff);
     padding: 10px 0;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.navbar::-webkit-scrollbar {
+    display: none;
 }
 .navbar a {
     flex: 0 0 auto;
