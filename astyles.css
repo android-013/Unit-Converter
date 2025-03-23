@@ -1,8 +1,35 @@
-.navbar .active {
+
+body {
+    background: linear-gradient(135deg, #001f3f, #0078ff);
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+}
+
+.navbar a {
+    flex: 0 0 auto;
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    font-size: 18px;
+}
+
+.navbar a:hover, .navbar .active {
     background: #00d4ff;
     color: black;
     font-weight: bold;
 }
+
 .converter-container {
     display: flex;
     flex-wrap: wrap;
@@ -10,6 +37,7 @@
     gap: 20px;
     padding: 20px;
 }
+
 .box {
     background: rgba(255, 255, 255, 0.1);
     padding: 15px;
@@ -17,17 +45,22 @@
     box-shadow: 0px 0px 10px rgba(0, 212, 255, 0.5);
     text-align: center;
 }
+
 .dropdown {
     position: relative;
     display: inline-block;
 }
+
 .dropbtn {
     background: #00d4ff;
     border: none;
     cursor: pointer;
     padding: 5px 10px;
     font-size: 16px;
+    color: black;
+    border-radius: 5px;
 }
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -35,15 +68,36 @@
     min-width: 120px;
     box-shadow: 0px 0px 10px rgba(0, 212, 255, 0.5);
     z-index: 1;
+    border-radius: 5px;
 }
+
 .dropdown-content div {
     color: white;
     padding: 10px;
     cursor: pointer;
+    text-align: left;
 }
+
 .dropdown-content div:hover {
     background: #00d4ff;
+    color: black;
 }
+
 .show {
     display: block;
+}
+
+input {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.3);
 }
