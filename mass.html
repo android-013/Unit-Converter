@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mass Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="js/mass.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="area.html">Area</a>
+        <a href="length.html">Length</a>
+        <a href="temperature.html">Temperature</a>
+        <a href="volume.html">Volume</a>
+        <a href="mass.html" class="active">Mass</a>
+        <a href="data.html">Data</a>
+        <a href="speed.html">Speed</a>
+        <a href="time.html">Time</a>
+    </div>
+    <div class="container">
+        <h1>Mass Converter</h1>
+        <div class="converter">
+            <p>Select input unit</p>
+            <select id="inputUnit">
+                <option value="tons">Metric Tons (t)</option>
+                <option value="uk_tons">UK Tons</option>
+                <option value="us_tons">US Tons</option>
+                <option value="pounds">Pounds (lb)</option>
+                <option value="ounces">Ounces (oz)</option>
+                <option value="kilograms">Kilograms (kg)</option>
+                <option value="grams">Grams (g)</option>
+            </select>
+            <p>Enter input value</p>
+            <input type="number" id="inputValue" placeholder="Enter value">
+            <p>Select output unit</p>
+            <select id="outputUnit">
+                <option value="tons">Metric Tons (t)</option>
+                <option value="uk_tons">UK Tons</option>
+                <option value="us_tons">US Tons</option>
+                <option value="pounds">Pounds (lb)</option>
+                <option value="ounces">Ounces (oz)</option>
+                <option value="kilograms">Kilograms (kg)</option>
+                <option value="grams">Grams (g)</option>
+            </select>
+            <p>Converted value</p>
+            <input type="text" id="outputValue" placeholder="Converted value" readonly>
+        </div>
+    </div>
+</body>
+</html>
